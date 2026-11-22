@@ -1,0 +1,532 @@
+[
+  {
+    "record_key": "09690ba3eee3c759eb9b492ce3473e6232e38263200e84dba06054c8de5a17d7",
+    "service": "dialysis",
+    "finding": "recent_independent",
+    "blue_check": true,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Bihar Bhawan reports the September 2026 inauguration of a dialysis unit at IGIMS, Sheikhpura. The institute reports 25 haemodialysis machines in January 2026. The government event and machine count refer to different dates.",
+    "sources": [
+      {
+        "role": "government_service",
+        "url": "https://biharbhawan.gov.in/docs/eMagazine/Newsletter_Sep_2026.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_service",
+        "url": "https://igims.org/about-us/department-detail/nephrology---kidney-transplant",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "7504ff288c82976fc21a988485112d8db909563a2b7fd156e9944c9126ad549b",
+    "service": "dialysis",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Patna hospital's kidney department lists haemodialysis and peritoneal dialysis. Its appointments page matches Kavi Raman Path. The non-government PM-JAY directory alone would be insufficient.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://advanceneurohospital.com/kidney-disease-treatment-in-patna.php",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://advanceneurohospital.com/book-appointment.php",
+        "vs_record_urls": "same_page"
+      }
+    ]
+  },
+  {
+    "record_key": "d7546c22f3dcbbcff2cb3b776f11a72a82b3174f37f014fbe9599050afae725d",
+    "service": "mri",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The centre-branded Google Site lists 3-tesla MRI and gives 150-B, Road 4, Rajendra Nagar on its contact page. Its main domain currently shows a blank WordPress blog. Treat the service statement as self-reported and call first.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://sites.google.com/view/ramanimagingdiagnosticcentre/home",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://sites.google.com/view/ramanimagingdiagnosticcentre/contact",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "inactive_content",
+        "url": "https://ramanimagingcentre.com/",
+        "vs_record_urls": "same_page"
+      }
+    ]
+  },
+  {
+    "record_key": "7ab775225b4c54f91d1e9c82d1a685e38456e987d2d2b6eb4b1bd7f8218e69f6",
+    "service": "mri",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "A Patna facility list identifies Sudha Diagnostics on Ashiyana Digha Road. It gives no MRI modality, and the dataset's social-media statement lacks independent confirmation.",
+    "sources": [
+      {
+        "role": "identity_only",
+        "url": "https://igims.org/Datafiles/cms/HCF%20-%20Patna.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "1ec0b560b34780c8e0c1f7576c807fe0dea731e5c60897a0def6700d9cea94de",
+    "service": "nicu",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Jyoti Punj's Boring Road page advertises 24-hour NICU care and one-to-one nursing. The network list matches the branch but does not establish neonatal staffing.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://jyotipunjhospital.com/",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "identity_only",
+        "url": "https://kwa.kerala.gov.in/wp-content/uploads/2026/04/LIST-OF-NETWORK-HOSPITALS-PAN-INDIA-BASIS-OICL.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "e1cd83b4229b3136deb58b821309f0afcfb5024c5a48fe0af8629133b1367aad",
+    "service": "nicu",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Kankarbagh hospital describes its existing NICU, limitations and transfers for procedures. It describes upgrades as future plans. Do not present those upgrades as resources in place.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://www.pulseemergencyhospital.com/nicu.php",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "0e35f9de7ce3c7dcbbd4cf391d7730bd22d8a17f55cdb379f0e02f649cd11726",
+    "service": "c_section",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The branch matches Daud Bigha, including the misspelled dataset name. The hospital lists maternity, high-risk pregnancy care and surgery generally. The commercial PM-JAY mirror's procedure list is insufficient to establish C-sections here.",
+    "sources": [
+      {
+        "role": "provider_related_specialty",
+        "url": "https://sunhospital.co.in/services1/obs-gynecologist/",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://sunhospital.co.in/contact/",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "e89d3ef5c561837fed36855847e4b26dd30e04da65d4482b59311c2b43832fb0",
+    "service": "c_section",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Medizone explicitly advertises 24-hour caesarean deliveries and gives 43 MIGH Road, behind Shalimar Sweets. This supports the ordinary C-section claim reviewed here.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://medizonehospital.com/",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "ded2269b185c43f2309da3025925035da2d5e0b2975e30bb6242a719cbb87251",
+    "service": "dialysis",
+    "finding": "historical_independent",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "At Ring Road, Sagrampura 395002, ESIC explicitly listed dialysis under an agreement ending September 2019. The hospital still lists dialysis under Ring Road. Use the matched branch and PIN for follow-up because the raw address also contains Akota Road.",
+    "sources": [
+      {
+        "role": "historical_government_service",
+        "url": "https://esic.gov.in/attachments/sstfile/b4aee815f2218bd5999e1fb55f0abac0.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_service",
+        "url": "https://nirmalhospitals.in/ayushman-bharat",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "identity_and_specialty",
+        "url": "https://portal.nabh.co/Documents/AccreditedList/Hospitals/HN2012N0165N5th%20Edition.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "ceba3d5338a2f98eb32c4e3d519aae3f8cd89af6067c9b38b2f0d5c030c1989e",
+    "service": "dialysis",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The trust lists dialysis at Kholwad, Kamrej, NH 48, PIN 394190. The government establishment directory supports the institution's identity.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://dinbandhuhospital.com/facilities.html",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "identity_only",
+        "url": "https://www.mospi.gov.in/sites/default/files/economic-census/Directories_of_Establishment/Rural_24.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "dbe6bbffac05fe310e862e6c98a377aa43c7406c5c75b961c62559cdb62dd7aa",
+    "service": "mri",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The VIP Plaza clinic matches the address. Its site-wide MRI defecography link goes to a Pune page. Neither this link nor the chain's equipment description establishes on-site MRI at VIP Plaza.",
+    "sources": [
+      {
+        "role": "provider_identity",
+        "url": "https://www.healinghandsclinic.co.in/surat/",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "other_location",
+        "url": "https://www.healinghandsclinic.co.in/defecography-india/",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "a2b7a2619752a12ffc63fd662929d2bd21c8e0d7f6b4e43db94e593e034d1b51",
+    "service": "mri",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Mulla Hospital's own site identifies the Kabilpore institution. The ESIC search hit containing MRI refers to Yashfeen Cardiac Hospital in Navsari and names a contact called Mulla.",
+    "sources": [
+      {
+        "role": "provider_identity",
+        "url": "https://mullahospital.com/",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "other_institution",
+        "url": "https://rogujarat.esic.gov.in/attachments/sstfile/a1a8f59f5a19570652262cc817f20a8f.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "ded2269b185c43f2309da3025925035da2d5e0b2975e30bb6242a719cbb87251",
+    "service": "nicu",
+    "finding": "historical_independent",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Ring Road hospital lists a NICU. ESIC specified neonatal critical care at this address through September 2019. The National Neonatology Forum's historical assessment also names Nirmal in Surat. Current unit grade and free beds remain unknown.",
+    "sources": [
+      {
+        "role": "historical_government_service",
+        "url": "https://esic.gov.in/attachments/sstfile/b4aee815f2218bd5999e1fb55f0abac0.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "historical_professional_assessment",
+        "url": "https://www.nnfi.org/assests/pdf/accridition-list-with-detail.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_service",
+        "url": "https://nirmalhospitals.in/hospitals/ring-road",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "a908a5b488ca85057cd00ff436755bbf627104c4244943eacaef2d87b852492e",
+    "service": "nicu",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The paediatrics department explicitly describes neonatal intensive care units at Velocity Business Hub, Pal–Adajan, Surat.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://velocityhospital.com/pediatrics-neonatology-velocity-hospital/",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "880078afdb298d8175835fcb8efc66a8b7073a3540f13e45c96b7bc58ffa74a7",
+    "service": "c_section",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The treating clinician's C-section service page gives Harsh Hospital, Shakuntal B, Adajan. The hospital's own site identifies the same clinician. These two sites are affiliated.",
+    "sources": [
+      {
+        "role": "affiliated_clinician_service",
+        "url": "https://gynecpurva.com/services/cesarean-section",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://harshhospital.in/",
+        "vs_record_urls": "same_page"
+      }
+    ]
+  },
+  {
+    "record_key": "6c82c15fafffd7aa47302a401cda139b0e3c95c2f718a8812bd76844649c18cd",
+    "service": "c_section",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Katargam gynaecology listing matches the second floor of Ashirward Doctor House. A clinician with multiple practice locations or another Katargam maternity hospital does not establish C-section delivery here.",
+    "sources": [
+      {
+        "role": "directory_lead",
+        "url": "https://www.practo.com/Surat/hospital/citylifecare-multispeciality-hospital-singanpore",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "6982c3fe85abe493f28b59e1f815beed6ac991dc5556ba558ba259c779d233eb",
+    "service": "dialysis",
+    "finding": "historical_independent",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Tamil Nadu 2022 government order names dialysis at Thirumalai Mission Hospital on Vanapadi Road. The hospital's 2023–24 report describes thousands of sessions and its site records a dedicated dialysis centre. The government lists PIN 632404 versus 632403 in the facility row. Branch name, town and street agree.",
+    "sources": [
+      {
+        "role": "historical_government_service",
+        "url": "https://cag.gov.in/uploads/media/G-O-204-DT-30-6-22-NHIS-064cb8adaaf0740-36745125.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "provider_activity",
+        "url": "https://tmh.health/static/docs/2023-2024.9d387698ede5.pdf",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "provider_service",
+        "url": "https://tmh.health/about/",
+        "vs_record_urls": "same_host"
+      }
+    ]
+  },
+  {
+    "record_key": "6313640d0629784d05ff7b5f44f967ad71aea132178bd26455054321f9396586",
+    "service": "dialysis",
+    "finding": "recent_independent",
+    "blue_check": true,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "ESIC Tamil Nadu's 5 December 2025 list, row 11, names dialysis at No. 2 McNichols Road, 3rd Lane, Chetpet. The listed term runs through 18 February 2027. Row 12 is a separate campus. Neither a session time nor patient coverage was checked.",
+    "sources": [
+      {
+        "role": "government_service",
+        "url": "https://rotamilnadu.esic.gov.in/attachments/publicationfile/LIST_OF_TIE_UP_HOSPITALS_FOR_SUPER_SPECIALTY_TREATMENT_1764920166.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "bae3dcb72cfcb29464642c1fe51894c73e5db4882bdb16dd4e60b9aac539d910",
+    "service": "mri",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Tirupati radiology unit describes MRI equipment, and the hospital gives its Karakambadi highway address. The state recognition list supports branch identity. Scanner model, field strength and uptime were not independently established.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://amarahospital.com/interventional-radiology/",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://amarahospital.com/contact-us/",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "identity_and_specialty",
+        "url": "https://www.dme.ap.nic.in/leftmenu_pages/ma_menu/ma/Recognizedhosolist.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "06a04ae438daf5f9d732cb56282dbcedd96ef4a79feeda694d13e5eef0b37ce3",
+    "service": "mri",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The challenged record and its Bajaj directory source mention MRI. The branch radiology department describes X-ray, ultrasound and C-arm. Its NABH scope does not establish MRI. These omissions warrant a call and do not establish absence.",
+    "sources": [
+      {
+        "role": "provider_related_modalities",
+        "url": "https://www.nmch.org/radiology/",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "accreditation_scope",
+        "url": "https://portal.nabh.co/Documents/AccreditedList/Entry-Level%20Hospitals/PEH-2019-0873.pdf",
+        "vs_record_urls": "other_host"
+      },
+      {
+        "role": "directory_lead",
+        "url": "https://www.bajajfinservhealth.in/hospitals/vellore/nalam-medical-centre-and-hospital-sathuvachari",
+        "vs_record_urls": "same_page"
+      }
+    ]
+  },
+  {
+    "record_key": "055637d872e4d799a5e3c2ec0e7ab1605f58a98e0d1eba94168c946bb878153e",
+    "service": "nicu",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The hospital advertises a Level III NICU at Alwarpet. The NABH certificate is valid to December 2027 at 542 TTK Road, but its scope specifies paediatrics including neonatology, without a NICU grade or bed count.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://www.motherhoodindia.com/locations/chennai/",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "accreditation_scope",
+        "url": "https://portal.nabh.co/Documents/AccreditedList/Entry-Level%20SHCO/PESHCO-2019-1619.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "dabb6c8ef03f4b0f40e9e14bed80b0cc0e237004c9b8ac00685768a7fb6766be",
+    "service": "nicu",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Jyoti's neonatal department describes NICU care and respiratory support. The address matches 895 TH Road, Old Washermenpet. This service page is already a source for the supplied record.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://jyotimultispecialityhospital.com/pediatrics-and-neonatology",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://jyotimultispecialityhospital.com/contact",
+        "vs_record_urls": "same_page"
+      }
+    ]
+  },
+  {
+    "record_key": "2148dedb99dd0538a3856be8a9bdcd6905c9c00ee2f26ab628db2ba78b6997a2",
+    "service": "c_section",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Tirupati branch department lists caesarean section among its services. The NHA list identifies the obstetrics specialty. Neither source documents an emergency team on duty for this query.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://www.asterhospitals.in/hospitals/aster-narayanadri-tirupati/specialities/obstetrics-gynaecology",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "government_related_specialty",
+        "url": "https://nha.gov.in/img/resources/PMJAY-Hospital-List.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "06a04ae438daf5f9d732cb56282dbcedd96ef4a79feeda694d13e5eef0b37ce3",
+    "service": "c_section",
+    "finding": "unresolved",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "The Vellore obstetrics page describes labour management, and NABH lists obstetrics and gynaecology. Neither specifies caesarean delivery. A similarly named institution's maternity page was excluded.",
+    "sources": [
+      {
+        "role": "provider_related_specialty",
+        "url": "https://www.nmch.org/obstetrics-and-gynecology/",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "accreditation_scope",
+        "url": "https://portal.nabh.co/Documents/AccreditedList/Entry-Level%20Hospitals/PEH-2019-0873.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  },
+  {
+    "record_key": "dd7b1db52e156cc426b363d3b099d908837785f4cbc0001ae2d841a38f3bb9bf",
+    "service": "emergency_c_section",
+    "finding": "provider",
+    "blue_check": false,
+    "current_availability": "unknown",
+    "reviewed_on": "2026-11-21",
+    "finding_detail": "Nahar's Bhinmal site explicitly lists emergency and elective caesareans in its obstetrician's services. The hospital gives a local emergency contact. NHA lists obstetrics generally. The hospital homepage already appears in the source record.",
+    "sources": [
+      {
+        "role": "provider_service",
+        "url": "https://naharhospital.com/",
+        "vs_record_urls": "same_page"
+      },
+      {
+        "role": "provider_identity",
+        "url": "https://www.naharhospital.com/hours-emergency-services.php",
+        "vs_record_urls": "same_host"
+      },
+      {
+        "role": "government_related_specialty",
+        "url": "https://nha.gov.in/img/resources/PMJAY-Hospital-List.pdf",
+        "vs_record_urls": "other_host"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+*.parquet
+*.dbc
+private_evaluation/
+data/eval/
+data/verifier_runs/

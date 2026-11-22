@@ -1,0 +1,2 @@
+unique_id,service,reviewed_record_key,source_fields,manual_review_reason
+1d4df34c-60d2-4d77-b690-c8030bcbbed2,mri,6cbd9a0782396c57492f40f1a14ee9c29f1c8f077a66254034502db514480c4a,"address_line1, address_line2, capability[17]","MRI is documented, but the address lists Pet Basheerabad and Punjagutta while the capability describes a diagnostic centre in Kompally. Confirm the MRI branch and street address."

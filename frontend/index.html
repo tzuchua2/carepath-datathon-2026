@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="design/assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="design/tokens.css">
+  <title>Carepath · Find the right care</title>
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/glass.css">
+  <link rel="stylesheet" href="src/layout.css">
+  <link rel="stylesheet" href="src/explain.css">
+  <script defer src="/vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <main class="workspace">
+    <section id="search-panel" class="sidebar" aria-label="Patient referral search">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Carepath home">carepath<span class="brand-dot">.</span></a>
+    <div class="top-actions"><button class="quiet" id="open-planner">Coverage gaps</button><button class="quiet" id="help">How it works</button></div>
+  </header>
+
+      <div class="sidebar-header">
+      <div class="intro"><h1>Find care</h1><button id="manual-new-case" class="quiet new-case-button" type="button">New case</button></div>
+      <div class="mode-switch" role="tablist" aria-label="Referral input mode">
+        <button id="manual-tab" role="tab" aria-selected="true" aria-controls="manual-panel" tabindex="0">Manual search</button>
+        <button id="agent-tab" role="tab" aria-selected="false" aria-controls="agent-panel" tabindex="-1">Ask Carepath</button>
+      </div>
+      <div class="starting-address">
+        <label for="location">Starting address</label>
+        <div class="address-control"><input id="location" name="location" form="search-form" required placeholder="Address, city, PIN or coordinates" autocomplete="off" maxlength="300" aria-describedby="address-status" role="combobox" aria-autocomplete="list" aria-controls="address-options" aria-expanded="false"><button id="locate-address" type="button">Locate</button></div>
+        <p id="address-status" role="status" aria-live="polite"></p>
+        <div id="address-options" class="address-options" role="listbox" aria-label="Matching starting addresses" hidden></div>
+      </div>
+      </div>
+      <div id="manual-panel" role="tabpanel" aria-labelledby="manual-tab">
+      <form id="search-form">
+        <section class="form-section">
+          <label for="service-search">Required service <span>*</span></label>
+          <div class="service-picker"><input id="service-search" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="service-options" placeholder="Search for a service" autocomplete="off" maxlength="120" required><select id="service" name="service" hidden aria-hidden="true" tabindex="-1"></select><div id="service-options" class="service-options" role="listbox" aria-label="Matching services" hidden></div></div>
+          <div class="service-shortcuts" role="group" aria-label="Common services"><button type="button" data-service="dialysis" aria-pressed="false">Dialysis</button><button type="button" data-service="mri" aria-pressed="false">MRI</button><button type="button" data-service="nicu" aria-pressed="false">NICU</button><button type="button" data-service="c_section" aria-pressed="false">C-section</button></div>
+          <p id="service-coverage" class="service-coverage" hidden></p>
+          <span id="service-search-status" class="sr-only" role="status" aria-live="polite"></span>
+        </section>
+        <details class="patient-section">
+          <summary>Patient context <span>Optional</span></summary>
+          <p class="field-hint">Use a case reference, not the patient's name.</p>
+          <div class="two-col"><div><label for="reference">Case reference</label><input id="reference" name="reference" placeholder="e.g. REF-024" maxlength="80"></div><div><label for="age">Age (years)</label><input id="age" name="age" type="number" min="0" max="120" step="1" placeholder="e.g. 54"></div></div>
+          <label for="presentation">Case description</label><textarea id="presentation" name="presentation" rows="3" maxlength="4000" placeholder="Reason for referral, current symptoms and care needed…"></textarea>
+          <label for="history">Medical history</label><textarea id="history" name="history" rows="2" maxlength="4000" placeholder="Relevant diagnoses, previous procedures…"></textarea>
+          <label for="medications">Medications & allergies</label><textarea id="medications" name="medications" rows="2" maxlength="2000" placeholder="Current medications and known allergies…"></textarea>
+          <button type="button" class="quiet patient-clear" id="clear-case">Clear patient details</button>
+        </details>
+        <div class="search-actions"><button type="submit" class="primary" id="search-button">Find facilities</button></div>
+      </form>
+      <div id="manual-results-slot"></div>
+      </div>
+      <section id="agent-panel" role="tabpanel" aria-labelledby="agent-tab" hidden>
+        <div class="agent-scroll" id="agent-scroll">
+          <div class="agent-welcome" id="agent-welcome">
+            <h2>What care is needed?</h2>
+            <div class="suggestion-grid">
+              <button class="suggestion" data-prompt="Find dialysis for a 54-year-old patient."><strong>Find dialysis nearby</strong><b aria-hidden="true">→</b></button>
+              <button class="suggestion" data-prompt="Find an MRI facility."><strong>Find an MRI nearby</strong><b aria-hidden="true">→</b></button>
+            </div>
+          </div>
+          <div id="conversation" role="log" aria-label="Referral conversation" aria-live="polite" aria-relevant="additions"></div>
+          <div class="agent-thinking" id="agent-thinking" role="status" hidden><i></i><i></i><i></i><small>Organizing your referral…</small></div>
+          <section id="referral-brief" class="referral-brief" aria-label="Referral brief" hidden></section>
+          <div id="agent-results-slot"></div>
+          <div id="agent-followups" role="log" aria-label="Shortlist discussion" aria-live="polite" aria-relevant="additions"></div>
+          <div class="followup-chips" id="followup-chips" hidden><button data-question="Why is this facility recommended?">Why this facility?</button><button data-question="Is availability confirmed?">Is availability confirmed?</button></div>
+        </div>
+        <div class="composer-area">
+          <form id="agent-form" class="agent-composer">
+            <label class="sr-only" for="agent-input">Message Carepath agent</label>
+            <textarea id="agent-input" rows="2" maxlength="4000" placeholder="Describe the care needed…" required aria-describedby="agent-privacy"></textarea>
+            <div class="composer-tools"><button id="agent-send" type="submit" aria-label="Send message">↑</button></div>
+          </form>
+          <p id="agent-privacy" class="agent-privacy">What you type here is sent to an outside AI service (DeepSeek) to work out the service and place. Do not type names, phone numbers or ID numbers.</p>
+        </div>
+      </section>
+      <section id="shortlist" aria-label="Facility shortlist" hidden>
+      <div class="result-header"><h2 id="result-title">Hospitals</h2><span class="result-tools"><button id="open-compare" class="text-button" type="button" hidden>Compare</button><button id="open-checklist" class="text-button" type="button" hidden>Call-ahead checklist</button></span></div>
+      <fieldset id="result-sort" class="result-sort" hidden>
+        <legend class="sr-only">Sort facilities</legend>
+        <div class="sort-switch">
+          <label><input type="radio" name="resultSort" value="recommended" checked><span>Recommended</span></label>
+          <label><input type="radio" name="resultSort" value="distance_first"><span>Nearest</span></label>
+          <label><input type="radio" name="resultSort" value="service_first"><span>Service evidence</span></label>
+        </div>
+      </fieldset>
+      <div id="search-status" role="status" aria-live="polite"></div>
+      <div id="results"></div>
+      </section>
+    </section>
+    <div id="workspace-divider" role="separator" tabindex="0" aria-label="Resize search and map" aria-orientation="vertical" aria-controls="search-panel" title="Drag to resize · Arrow keys to adjust · Double-click to reset"><span aria-hidden="true"></span></div>
+    <section class="map-panel is-idle" aria-label="Facility map">
+      <div id="map"></div>
+      <div class="map-toolbar"><div class="view-actions"><button class="map-button" id="fit-map">Show all</button></div></div>
+      <div id="map-error" role="status" hidden>Map tiles are unavailable. Facility coordinates remain available in the results.</div>
+      <div class="map-note"><span class="legend-dot"></span> Starting point <span class="legend-facility">1</span> Hospital</div>
+    </section>
+  </main>
+  <dialog id="evidence-dialog" class="evidence-dialog" aria-labelledby="lens-title"><div id="evidence-content"></div></dialog>
+  <p id="facility-action-status" class="sr-only" role="status" aria-live="polite"></p>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close details">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
